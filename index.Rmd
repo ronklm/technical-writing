@@ -26,28 +26,6 @@ body {
   text-align: center;
 }
 
-nav a {
-  display: inline-block;
-  padding: 10px 20px;
-  margin: 10px;
-  background-color: #b89877;
-  color: #3e3e3e;;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease-in-out;
-}
-
-nav a:hover {
-  background-color: #806a53;
-  color: white;
-}
-
-nav ul li a {
-  color: #13426d; 
-  text-decoration: none; 
-  padding: 10px;
-}
-
 #forgeinstall, #modinstall, #serversetup, #faq {
   padding: 40px;
   background-color: #f4f4f4;
@@ -62,26 +40,100 @@ nav ul li a {
   margin-bottom: 10px;
 }
 
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
 
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+ul {
+  list-style-type: none; /* Remove default bullet points */
+}
+
+ul li {
+  list-style-type: none; /* Remove default bullet points */
+}
 ```
+<!-- Tab links -->
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'forgeinstall')">Installing Forge</button>
+  <button class="tablinks" onclick="openCity(event, 'modinstall')">Installing Mods</button>
+  <button class="tablinks" onclick="openCity(event, 'serversetup')">Setting up the Server</button>
+  <button class="tablinks" onclick="openCity(event, 'faq')">FAQ</button>
+</div>
+
+<!-- Tab content -->
 
 <div id="header">
   <h1>Setting Up</h1>
   <p>Before following this guide, be sure that you’ve installed Minecraft Java edition on your computer. Also, make sure that you’ve launched the game at least once with the version you’d like to install mods for. We’ll be using Minecraft version 1.19.4, but the process should be the same for all versions.
   </p>
-  <br>
-  <nav>
-    <a href="#forgeinstall">Installing Forge</a>
-    <a href="#modinstall">Installing Mods</a>
-    <a href="#serversetup">Setting up the Server</a>
-    <a href="#faq">FAQ</a>
-  </nav>
 </div>
 
+<script>
+  function openCity(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
 
- <div id="forgeinstall"> 
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+
+ <div id="forgeinstall" class = "tabcontent"> 
  <h2 class="section-title">Installing Forge</h2>
-  <ol>
+  <ul>
     <li>
       <p><strong>Step 1:</strong> Navigate to the download page for
         [Minecraft Forge](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.20.2.html) </p>
@@ -155,15 +207,15 @@ nav ul li a {
     <li>
       <p><strong>Step 19:</strong> Continue by clicking the green "Play" button </p>
     </li>
-  </ol>
+  </ul>
 </div>
 
 
-<div id="modinstall">
+<div id="modinstall" class = "tabcontent">
   <h2 class="section-title">Installing Mods</h2>
   <p>Selecting mods to install can be more of an art than a science, since mods are community made and may not always work with all other mods. Mods can be found from various sources, such as [MinecraftMods.com](https://www.minecraftmods.com/) and [CurseForge.com](https://www.curseforge.com/MINECRAFT). When selecting mods, it’s important to ensure they are for your version of Minecraft Forge, as otherwise they can cause major issues. Luckily, the mod installation steps are now quite simple. </p>
   <br>
-  <ol>
+  <ul>
     <li>
       <p><strong>Step 1:</strong> Navigate to your desktop.</p>
     </li>
@@ -186,12 +238,12 @@ nav ul li a {
     <li>
       <p><strong>Step 7:</strong> Launch the game using your Forge Installation to get started playing!</p>
     </li>
-  </ol>
+  </ul>
 </div>
 
-<div id="serversetup">
+<div id="serversetup" class = "tabcontent">
   <h2 class="section-title">Setting Up a Server</h2>
-   <ol>
+   <ul>
     <li>
       <p><strong>Step 1:</strong> Navigate to your desktop.</p>
     </li>
@@ -275,11 +327,11 @@ nav ul li a {
     <li>
       <p><strong>Step 25:</strong> Repeat steps <strong>21-24</strong> with the usernames of friends you'd like to add to the server. </p>
     </li>
-  </ol>
+  </ul>
   
   <h3>The server should now be running locally, now it’s time to connect! </h3>
   
-  <ol>
+  <ul>
     <li>
       <p><strong>Step 1:</strong> Launch Minecraft using your Forge Installation.</p>
     </li>
@@ -305,10 +357,10 @@ nav ul li a {
     <li>
        <p><strong>Step 8:</strong> Click "Join Server" near the bottom of the screen.</p>
     </li>
-  </ol>
+  </ul>
   
   <h3>Connecting friends is similar, but there are a few things to note.</h3>
-  <ol>
+  <ul>
     <li>
        <p><strong>Step 1:</strong> Ensure your friends are on the same network as you are. </p>
        <p><strong>Note:</strong> With port forwarding you can connect across networks, but that adds security risks so we won't cover it here.</p>
@@ -325,9 +377,9 @@ nav ul li a {
     <li>
        <p><strong>Step 5:</strong> They'll need your public IPv4, which can be found near the top of the screen at [whatismyip.com](https://www.whatismyip.com/) </p>
     </li>
-  </ol>
+  </ul>
   <h3>Once you've checked these things, they're ready to connect! Just have them follow these instructions. </h3>
-  <ol>
+  <ul>
     <li>
        <p><strong>Step 1:</strong> Launch Minecraft using your Forge Installation. </p>
     </li>
@@ -349,9 +401,9 @@ nav ul li a {
     <li>
        <p><strong>Step 7:</strong> Click "Join Server" near the bottom of the screen. </p>
     </li>
-  </ol>
+  </ul>
   <h3> Closing the server is very simple.</h3>
-   <ol>
+   <ul>
     <li>
        <p><strong>Step 1:</strong> Return to the server terminal. </p>
     </li>
@@ -361,12 +413,12 @@ nav ul li a {
     <li>
        <p><strong>Step 3:</strong> Press the "enter" key. </p>
     </li>
-  </ol>
+  </ul>
 </div>
 
-<div id="faq">
+<div id="faq" class = "tabcontent">
   <h2 class="section-title">FAQ</h2>
-  <ol>
+  <ul>
     <li>
        <p><strong>*Question:*</strong> *My friends could join when I first told them how, why can't they now?* </p>
       <p><strong>Answer:</strong> Public IP addresses can change, so return to [whatismyip.com](https://www.whatismyip.com/) and make sure it's the same as what they're entering.</p>
@@ -379,5 +431,6 @@ nav ul li a {
        <p><strong>*Question:*</strong> *Can my friends connect from other networks?* </p>
       <p><strong>Answer:</strong> No. At least not without port forwarding, which is a process that varies depending on internet providers and can cause security risks.</p>
     </li>
+  </ul>
 </div>
 ```
