@@ -1,5 +1,5 @@
 ---
-title: "Welcome"
+title: "Minecraft Mod Installation"
 output: html_document
 author: "Damien Ronk, Sam Brown, Crystal Wright"
 ---
@@ -90,6 +90,10 @@ ul {
 ul li {
   list-style-type: none; /* Remove default bullet points */
 }
+
+/*Adding bottom navigation arrows*/
+  #nav-arrows
+  
 ```
 <!-- Tab links -->
 <div class="tab">
