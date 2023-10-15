@@ -359,14 +359,15 @@ display: none;
 body {
 font-family: Helvetica, Arial, sans-serif;
 background-color: #3e3e3e;
+font-size: 15px;
 }
 #header {
 background-color: #858585;
 color: white;
-padding: 20px;
+padding: 25px;
 text-align: center;
 }
-#forgeinstall, #modinstall, #serversetup, #faq {
+#forgeinstall, #modinstall, #serversetup, #faq, #gettingstarted {
 padding: 40px;
 background-color: #f4f4f4;
 }
@@ -423,7 +424,9 @@ list-style-type: none;
 </style>
 <!-- Tab links -->
 <div class="tab">
-<p><button class="tablinks" onclick="openCity(event, &#39;forgeinstall&#39;)">Installing
+<p><button class="tablinks" onclick="openCity(event, &#39;gettingstarted&#39;)">Getting
+Started</button>
+<button class="tablinks" onclick="openCity(event, &#39;forgeinstall&#39;)">Installing
 Forge</button>
 <button class="tablinks" onclick="openCity(event, &#39;modinstall&#39;)">Installing
 Mods</button>
@@ -467,9 +470,19 @@ same for all versions.
   evt.currentTarget.className += " active";
 }
 </script>
+<div id="gettingstarted" class="tabcontent">
+<h2 class="section-title">
+<u>Getting Started</u>
+</h2>
+<ul>
+<div>
+beans on toast
+</div>
+</ul>
+</div>
 <div id="forgeinstall" class="tabcontent">
 <h2 class="section-title">
-Installing Forge
+<u>Installing Forge</u>
 </h2>
 <ul>
 <li>
@@ -602,7 +615,7 @@ read it if you’d like.
 </div>
 <div id="modinstall" class="tabcontent">
 <h2 class="section-title">
-Installing Mods
+<u>Installing Mods</u>
 </h2>
 <p>
 Selecting mods to install can be more of an art than a science, since
@@ -663,7 +676,7 @@ working properly.
 </div>
 <div id="serversetup" class="tabcontent">
 <h2 class="section-title">
-Setting Up a Server
+<u>Setting Up a Server</u>
 </h2>
 <ul>
 <li>
@@ -1058,7 +1071,7 @@ Closing the server is very simple.
 </div>
 <div id="faq" class="tabcontent">
 <h2 class="section-title">
-FAQ
+<u>FAQ</u>
 </h2>
 <ul>
 <li>
@@ -1107,7 +1120,7 @@ of Minecraft.
 </li>
 </ul>
 <h2 class="section-title">
-Troubleshooting
+<u>Troubleshooting</u>
 </h2>
 <ul>
 <p>
