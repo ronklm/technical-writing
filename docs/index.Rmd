@@ -91,10 +91,12 @@ ul li {
   list-style-type: none; /* Remove default bullet points */
 }
 
-/*Adding bottom navigation arrows*/
-  #nav-arrows
   
 ```
+
+
+
+
 <!-- Tab links -->
 <div class="tab">
   <button class="tablinks" onclick="openCity(event, 'forgeinstall')">Installing Forge</button>
