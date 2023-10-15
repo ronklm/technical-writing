@@ -1,5 +1,5 @@
 ---
-title: "Minecraft Mod Installation"
+title: "Creating a Modded Minecraft Server"
 output: html_document
 author: "Damien Ronk, Sam Brown, Crystal Wright"
 ---
@@ -17,7 +17,6 @@ library(htmltools)
 body {
   font-family: Helvetica, Arial, sans-serif;
   background-color: #3e3e3e;
-  font-size: 15px;
 }
 
 #header {
@@ -37,7 +36,7 @@ body {
 }
 
 .section-title {
-  font-size: 25px;
+  font-size: 24px;
   margin-bottom: 10px;
 }
 
@@ -91,19 +90,13 @@ ul {
 ul li {
   list-style-type: none; /* Remove default bullet points */
 }
-
-  
 ```
-
-
-
-
 <!-- Tab links -->
 <div class="tab">
   <button class="tablinks" onclick="openCity(event, 'forgeinstall')">Installing Forge</button>
   <button class="tablinks" onclick="openCity(event, 'modinstall')">Installing Mods</button>
   <button class="tablinks" onclick="openCity(event, 'serversetup')">Setting up the Server</button>
-  <button class="tablinks" onclick="openCity(event, 'faq')">FAQ</button>
+  <button class="tablinks" onclick="openCity(event, 'faq')">FAQ and Troubleshooting</button>
 </div>
 
 <!-- Tab content -->
@@ -139,7 +132,7 @@ ul li {
 
 
  <div id="forgeinstall" class = "tabcontent"> 
- <h2 class="section-title"><u>Installing Forge</u></h2>
+ <h2 class="section-title">Installing Forge</h2>
   <ul>
     <li>
       <p><strong>Step 1:</strong> Navigate to the download page for
@@ -152,7 +145,7 @@ ul li {
     </li>
     <li>
       <p><strong>Step 3:</strong> Click the button labeled “Installer.”</p>
-      <p><strong> Note:</strong> If there are two download options, select the one on the right labeled “Download Recommended.”</p>
+      <p><strong> Note:</strong> If there are two download options, select the one labeled “Download Recommended.”</p>
     </li>
     <li>
       <p><strong>Step 4:</strong> Use the menu on the left side of the page to 
@@ -170,9 +163,6 @@ ul li {
       <p><strong>Step 7:</strong> In the new window, double click on the file you 
       just downloaded, which should have a name ending in “installer.jar” and be
       near the top of the download list.</p>
-      <p><strong>Note:</strong> If you are prompted to choose how to run the file,
-      check our troubleshooting section to install the Java Development Kit that allows you
-      to run .jar files</p>
     </li>
     <li>
       <p><strong>Step 8:</strong> "Install Client" should already be selected, so simply
@@ -198,6 +188,7 @@ ul li {
     <li>
       <p><strong>Step 14:</strong> Select your newly installed Forge version in the "Version"
       dropdown menu.</p>
+      <ul><p><strong> Note:</strong> It should be named something similar to “release 1.19.4-forge-45.2.0” except it will use the version numbers for your installation.</p></ul>
     </li>
     <li>
       <p><strong>Step 15:</strong> Click "Create" in the bottom right of the launcher. </p>
@@ -206,7 +197,7 @@ ul li {
       <p><strong>Step 16:</strong> Return to the main page by clicking "Play" near the top of the launcher </p>
     </li>
     <li>
-      <p><strong>Step 17:</strong> Select your newly created installation in the dropdown menu to the left of the large green "Play Button". </p>
+      <p><strong>Step 17:</strong> Select your newly created installation in the drop-down menu to the left of the large green "Play Button". </p>
     </li>
     <li>
       <p><strong>Step 18:</strong> A warning about modding should appear, you may read it if you'd like. </p>
@@ -219,7 +210,7 @@ ul li {
 
 
 <div id="modinstall" class = "tabcontent">
-  <h2 class="section-title"><u>Installing Mods</u></h2>
+  <h2 class="section-title">Installing Mods</h2>
   <p>Selecting mods to install can be more of an art than a science, since mods are community made and may not always work with all other mods. Mods can be found from various sources, such as [MinecraftMods.com](https://www.minecraftmods.com/) and [CurseForge.com](https://www.curseforge.com/MINECRAFT). When selecting mods, it’s important to ensure they are for your version of Minecraft Forge, as otherwise they can cause major issues. Luckily, the mod installation steps are now quite simple. </p>
   <br>
   <ul>
@@ -243,13 +234,16 @@ ul li {
       <p><strong>Step 6:</strong> You can now copy and paste the mods you'd like to use into this folder.</p>
     </li>
     <li>
-      <p><strong>Step 7:</strong> Launch the game using your Forge Installation to get started playing!</p>
+      <p><strong>Step 7:</strong> Launch the game to make sure everything is working properly.</p>
+    </li>
+    <li>
+      <p><strong>Step 8:</strong> Close the game to move on to the next section.</p>
     </li>
   </ul>
 </div>
 
 <div id="serversetup" class = "tabcontent">
-  <h2 class="section-title"><u>Setting Up a Server</u></h2>
+  <h2 class="section-title">Setting Up a Server</h2>
    <ul>
     <li>
       <p><strong>Step 1:</strong> Navigate to your desktop.</p>
@@ -258,7 +252,8 @@ ul li {
       <p><strong>Step 2:</strong> On your keyboard, press "ctrl", "shift", and "n" at the same time to create a new folder.</p>
     </li>
     <li>
-      <p><strong>Step 3:</strong> Name the folder whatever you'd like, it will be the folder that holds your server.</p>
+      <p><strong>Step 3:</strong> Name the folder whatever you'd like.</p>
+      <ul><p><strong> Note:</strong> This is your server folder, you’ll be returning to it throughout the guide.</p></ul>
     </li>
     <li>
       <p><strong>Step 4:</strong> Navigate to the Minecraft Forge installer for your chosen Minecraft version (alternatively follow steps 1-7 of the <a href="#forgeinstall">Installing Forge</a> guide.) </p>
@@ -267,10 +262,10 @@ ul li {
       <p><strong>Step 5:</strong> Select "Install Server" in the installer. </p>
     </li>
     <li>
-     <p><strong>Step 6:</strong> Click the button labeled "..." to the right of the file path. </p>
+     <p><strong>Step 6:</strong> Click the button labeled with three dots to the right of the file path. </p>
     </li>
     <li>
-     <p><strong>Step 7:</strong> Click the "Desktop" button on the right side of the window.</p>
+     <p><strong>Step 7:</strong> Click the "Desktop" button on the left side of the window.</p>
      ![](screenshots/Forge_Server_Folder.PNG)
     </li>
     <li>
@@ -280,7 +275,7 @@ ul li {
      <p><strong>Step 9:</strong> Click the "Open" near the bottom right of the window.</p>
     </li>
     <li>
-     <p><strong>Step 10:</strong> Click the "OK" button.</p>
+     <p><strong>Step 10:</strong> Click the "OK" button once it appears.</p>
     </li>
     <li>
       <p><strong>Step 11:</strong> Navigate to your server folder. </p>
@@ -293,7 +288,8 @@ ul li {
       <p><strong>Step 13:</strong> Press "enter" on the keyboard to close the terminal window </p>
     </li>
     <li>
-      <p><strong>Step 14:</strong> In the server folder, open "eula.txt" and read the provided link if you'd like. </p>
+      <p><strong>Step 14:</strong> In the server folder, open "eula.txt" using notepad or another text editor.</p>
+      <ul><p><strong>Note:</strong> The file contains a link to the End User License Agreement (EULA), which is the set of terms you agree to abide by while playing the game. You may follow the link if you'd like to read it in detail.</p></ul>
     </li>
      <li>
      <p><strong>Step 15:</strong> Replace "eula=false" with *"eula=true"*.</p>
@@ -307,32 +303,37 @@ ul li {
     </li>
     <li>
      <p><strong>Step 18:</strong> Place your chosen mods into the "mods" folder.</p>
-     <p><strong>Note:</strong> Assuming that you've already installed them for single player, simply copy and paste your single player mods into your server's folder.</p>
+     <ul><p><strong>Note:</strong> Assuming that you've already installed them for single player, simply copy and paste your single player mods into your server's folder.</p></ul>
       ![](screenshots/Server_mods_folder.PNG)
     </li>
     <li>
-      <p><strong>Step 19:</strong> Replace "server.properties" with one of the provided replacements, depending on your preferred settings. </p>
-    </li>
-    <li>
-      <p><strong>Step 20:</strong> Open "run.bat" and wait for the server to start. </p>
-    </li>
-    <li>
-     <p><strong>Step 21:</strong> Type "/op" followed by your Minecraft username into the terminal.</p>
-      <p><strong>Ex:</strong> "/op LumberHat"</p>
+      <p><strong>Step 19:</strong>Open "run.bat" and wait for the server to start.</p>
+      <ul><p><strong>Note</strong> Opening this file should create two new windows. The black window is your server terminal and we will be returning to it. The white window is the server status panel and we won’t need it here. Once the text in the server terminal stops appearing the server should be started. To double check, you can try typing in the terminal, if it allows you to then the server is started.</p></ul>
+      <li><p><strong>Step 20:</strong> Type "stop" into the terminal.</p></li>
+      <li><p><strong>Step 21:</strong> Press the "enter" key to close the server.</p></li>
+      <li><p><strong>Step 22:</strong> Press the "enter" key again to close the terminal.</p></li>
+      <li><p><strong>Step 23:</strong> Open the file "server.properties" in your server folder.</p></li>
+      <li><p><strong>Step 24:</strong> Modify the settings for your server by editing this file.</p></li>
+      <ul><p><strong>Note:</strong> There are a lot of settings you can change, and it’s recommended to visit this page on the [Minecraft wiki](https://minecraft.fandom.com/wiki/Server.properties) to learn more about them. Making edits works the same as when you accepted the EULA, simply replace the value after the equals sign with what you’d like it to be and save the file. We recommend setting “white-list” to true.
+</p></ul>
+      <li><p><strong>Step 25:</strong> Close "server.properties" to return to your server folder.</p></li>
+     <li><p><strong>Step 26:</strong></p> Open "run.bat" and wait for the server to start.</li>
+     <p><strong>Step 27:</strong> Type "/op" followed by your Minecraft username into the terminal.</p>
+      <ul><p><strong>Ex:</strong> "/op LumberHat"</p></ul>
     </li>
      <li>
-     <p><strong>Step 22:</strong> Press the "enter" key to grant operator privileges on the server.</p>
+     <p><strong>Step 28:</strong> Press the "enter" key to grant operator privileges on the server.</p>
     </li>
     <li>
-     <p><strong>Step 23:</strong> Type "/whitelist add " followed by your Minecraft username into the terminal.</p>
-     <p><strong>Ex:</strong> "/whitelist add LumberHat"</p>
+     <p><strong>Step 29:</strong> Type "/whitelist add " followed by your Minecraft username into the terminal.</p>
+     <ul><p><strong>Ex:</strong> "/whitelist add LumberHat"</p></ul>
       ![](screenshots/Whitelist.PNG)
     </li>
     <li>
-      <p><strong>Step 24:</strong> Press the "enter" key to grant permission to join the server. </p>
+      <p><strong>Step 30:</strong> Press the "enter" key to grant permission to join the server. </p>
     </li>
     <li>
-      <p><strong>Step 25:</strong> Repeat steps <strong>21-24</strong> with the usernames of friends you'd like to add to the server. </p>
+      <p><strong>Step 31:</strong> Repeat steps <strong>27-30</strong> with the usernames of friends you'd like to add to the server. </p>
     </li>
   </ul>
   
@@ -370,7 +371,7 @@ ul li {
   <ul>
     <li>
        <p><strong>Step 1:</strong> Ensure your friends are on the same network as you are. </p>
-       <p><strong>Note:</strong> With port forwarding you can connect across networks, but that adds security risks so we won't cover it here.</p>
+       <ul><p><strong>Note:</strong> With port forwarding you can connect across networks, but that adds security risks so we won't cover it here.</p></ul>
     </li>
     <li>
        <p><strong>Step 2:</strong> Make sure they've installed the same mods as the ones on the server. </p>
@@ -424,20 +425,31 @@ ul li {
 </div>
 
 <div id="faq" class = "tabcontent">
-  <h2 class="section-title"><u>FAQ</u></h2>
+  <h2 class="section-title">FAQ</h2>
   <ul>
     <li>
        <p><strong>*Question:*</strong> *My friends could join when I first told them how, why can't they now?* </p>
-      <p><strong>Answer:</strong> Public IP addresses can change, so return to [whatismyip.com](https://www.whatismyip.com/) and make sure it's the same as what they're entering.</p>
+      <p><strong>Answer:</strong> Public IP addresses can change, so return to [whatismyip.com](https://www.whatismyip.com/) and make sure it's the same as what they're entering. If it isn't, then you'll need to update it to the new IP.</p>
     </li>
     <li>
        <p><strong>*Question:*</strong> *Why can't I open the Minecraft Forge installer on my computer?* </p>
-      <p><strong>Answer:</strong> Since the installer is a ".jar" file, you should make sure you have java installed, you can download it at [this site](https://www.java.com/download/ie_manual.jsp).</p>
+      <p><strong>Answer:</strong> Since the installer is a ".jar" file, you should make sure you have Java installed, you can download it at [this site](https://www.java.com/download/ie_manual.jsp).</p>
     </li>
     <li>
        <p><strong>*Question:*</strong> *Can my friends connect from other networks?* </p>
       <p><strong>Answer:</strong> No. At least not without port forwarding, which is a process that varies depending on internet providers and can cause security risks.</p>
     </li>
+    <li>
+       <p><strong>*Question:*</strong> *I don't have Minecraft, how do I get it?* </p>
+      <p><strong>Answer:</strong> You can find a handy guide for purchase and installation on [Minecraft's website](https://help.minecraft.net/hc/en-us/articles/6660924652557-I-Want-to-Buy-Minecraft-on-a-Windows-10-11-Device). It should be noted that this guide is for the Java version of Minecraft.</p>
+    </li>
+  </ul>
+  <h2 class="section-title">Troubleshooting</h2>
+  <ul>
+  <p><strong>Other users unable to connect:</strong></p>
+  <p> Make sure that the server host is on the same network as other users.</p>
+  <p> If the server host or users have a Virtual Private Network (VPN) program running, it is the same as being on other networks.</p>
+  <p> Make sure that a firewall isn't blocking the connection.</p>
   </ul>
 </div>
 ```
