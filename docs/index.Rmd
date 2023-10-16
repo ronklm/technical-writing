@@ -27,7 +27,7 @@ body {
   text-align: center;
 }
 
-#forgeinstall, #modinstall, #serversetup, #faq, #gettingstarted {
+#forgeinstall, #modinstall, #serversetup, #faq, #gettingstarted, #connecting {
   padding: 40px;
   background-color: #f4f4f4;
 }
@@ -110,10 +110,11 @@ ul li {
 ```
 <!-- Tab links -->
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'gettingstarted')">Getting Started</button>
+  <button class="tablinks" onclick="openCity(event, 'gettingstarted')"> Getting Started</button>
   <button class="tablinks" onclick="openCity(event, 'forgeinstall')">Installing Forge</button>
   <button class="tablinks" onclick="openCity(event, 'modinstall')">Installing Mods</button>
   <button class="tablinks" onclick="openCity(event, 'serversetup')">Setting up the Server</button>
+  <button class="tablinks" onclick="openCity(event, 'connecting')">Connecting</button>
   <button class="tablinks" onclick="openCity(event, 'faq')">FAQ and Troubleshooting</button>
 </div>
 
@@ -213,7 +214,7 @@ function topFunction() {
       select your preferred version of Minecraft.</p>
     </li>
     <li>
-      <p><strong>Step 5:</strong> On your keyboard, press the Windows key and the “R” key 
+      <p><strong>Step 5:</strong> On your keyboard, press the Windows key and the <strong>R</strong> key 
       at the same time.</p>
     </li>
       </li>
@@ -310,14 +311,14 @@ function topFunction() {
       <p><strong>Step 1:</strong> Navigate to your desktop.</p>
     </li>
      <li>
-      <p><strong>Step 2:</strong> On your keyboard, press "ctrl", "shift", and "n" at the same time to create a new folder.</p>
+      <p><strong>Step 2:</strong> On your keyboard, press <strong>ctrl</strong>, <strong>shift</strong>, and <strong>n</strong> at the same time to create a new folder.</p>
     </li>
     <li>
       <p><strong>Step 3:</strong> Name the folder whatever you'd like.</p>
       <ul><p><strong> Note:</strong> This is your server folder, you’ll be returning to it throughout the guide.</p></ul>
     </li>
     <li>
-      <p><strong>Step 4:</strong> Navigate to the Minecraft Forge installer for your chosen Minecraft version (alternatively follow steps 1-7 of the <a href="#forgeinstall">Installing Forge</a> guide.) </p>
+      <p><strong>Step 4:</strong> Navigate to the Minecraft Forge installer for your chosen Minecraft version (alternatively follow steps 1-7 of the Installing Forge section.) </p>
     </li>
     <li>
       <p><strong>Step 5:</strong> Select "Install Server" in the installer. </p>
@@ -346,7 +347,7 @@ function topFunction() {
 <img style="border:3px solid #858585;" src="screenshots/server_bat.PNG">
     </li>
     <li>
-      <p><strong>Step 13:</strong> Press "enter" on the keyboard to close the terminal window </p>
+      <p><strong>Step 13:</strong> Press <strong>enter</strong> on the keyboard to close the terminal window </p>
     </li>
     <li>
       <p><strong>Step 14:</strong> In the server folder, open "eula.txt" using notepad or another text editor.</p>
@@ -357,7 +358,7 @@ function topFunction() {
       <img style="border:3px solid #858585;" src="screenshots/eulaPNG.PNG">
     </li>
     <li>
-      <p><strong>Step 16:</strong> On the keyboard, press "ctrl" and "s" at the same time to save the file. </p>
+      <p><strong>Step 16:</strong> On the keyboard, press <strong>ctrl</strong> and <strong>s</strong> at the same time to save the file. </p>
     </li>
     <li>
       <p><strong>Step 17:</strong> Close the window. </p>
@@ -371,8 +372,8 @@ function topFunction() {
       <p><strong>Step 19:</strong>Open "run.bat" and wait for the server to start.</p>
       <ul><p><strong>Note</strong> Opening this file should create two new windows. The black window is your server terminal and we will be returning to it. The white window is the server status panel and we won’t need it here. Once the text in the server terminal stops appearing the server should be started. To double check, you can try typing in the terminal, if it allows you to then the server is started.</p></ul>
       <li><p><strong>Step 20:</strong> Type "stop" into the terminal.</p></li>
-      <li><p><strong>Step 21:</strong> Press the "enter" key to close the server.</p></li>
-      <li><p><strong>Step 22:</strong> Press the "enter" key again to close the terminal.</p></li>
+      <li><p><strong>Step 21:</strong> Press the <strong>enter</strong> key to close the server.</p></li>
+      <li><p><strong>Step 22:</strong> Press the <strong>enter</strong> key again to close the terminal.</p></li>
       <li><p><strong>Step 23:</strong> Open the file "server.properties" in your server folder.</p></li>
       <li><p><strong>Step 24:</strong> Modify the settings for your server by editing this file.</p></li>
       <ul><p><strong>Note:</strong> There are a lot of settings you can change, and it’s recommended to visit this page on the [Minecraft wiki](https://minecraft.fandom.com/wiki/Server.properties) to learn more about them. Making edits works the same as when you accepted the EULA, simply replace the value after the equals sign with what you’d like it to be and save the file. We recommend setting “white-list” to true.
@@ -383,7 +384,7 @@ function topFunction() {
       <ul><p><strong>Ex:</strong> "/op LumberHat"</p></ul>
     </li>
      <li>
-     <p><strong>Step 28:</strong> Press the "enter" key to grant operator privileges on the server.</p>
+     <p><strong>Step 28:</strong> Press the <strong>enter</strong> key to grant operator privileges on the server.</p>
     </li>
     <li>
      <p><strong>Step 29:</strong> Type "/whitelist add " followed by your Minecraft username into the terminal.</p>
@@ -391,7 +392,7 @@ function topFunction() {
       <img style="border:3px solid #858585;" src="screenshots/Whitelist.PNG">
     </li>
     <li>
-      <p><strong>Step 30:</strong> Press the "enter" key to grant permission to join the server. </p>
+      <p><strong>Step 30:</strong> Press the <strong>enter</strong> key to grant permission to join the server. </p>
     </li>
     <li>
       <p><strong>Step 31:</strong> Repeat steps <strong>27-30</strong> with the usernames of friends you'd like to add to the server. </p>
@@ -399,7 +400,9 @@ function topFunction() {
   </ul>
   
   <h3>The server should now be running locally, now it’s time to connect! </h3>
-  
+</div>
+<div id="connecting" class = "tabcontent">
+  <h2 class="section-title"><u>Connecting to a Server</u></h2>
   <ul>
     <li>
       <p><strong>Step 1:</strong> Launch Minecraft using your Forge Installation.</p>
@@ -446,6 +449,8 @@ function topFunction() {
     <li>
        <p><strong>Step 5:</strong> They'll need your public IPv4, which can be found near the top of the screen at [whatismyip.com](https://www.whatismyip.com/) </p>
     </li>
+      <img style="border:3px solid #858585;" src="screenshots/whatismyip.PNG" width="60%">
+      <p><strong>Note:</strong> Don't give your IP to anyone you don't trust, the example IP is from a VPN.</p>
   </ul>
   <h3>Once you've checked these things, they're ready to connect! Just have them follow these instructions. </h3>
   <ul>
@@ -480,7 +485,7 @@ function topFunction() {
        <p><strong>Step 2:</strong> Type "stop into the terminal. </p>
     </li>
     <li>
-       <p><strong>Step 3:</strong> Press the "enter" key. </p>
+       <p><strong>Step 3:</strong> Press the <strong>enter</strong> key. </p>
     </li>
   </ul>
 </div>
@@ -494,7 +499,7 @@ function topFunction() {
     </li>
     <li>
        <p><strong>*Question:*</strong> *Why can't I open the Minecraft Forge installer on my computer?* </p>
-      <p><strong>Answer:</strong> Since the installer is a ".jar" file, you should make sure you have Java installed, you can download it at [this site](https://www.java.com/download/ie_manual.jsp).</p>
+      <p><strong>Answer:</strong> Since the installer is a ".jar" file, you should make sure you have Java installed, you can download it at [this site](https://www.java.com/download/ie_manual.jsp). If this doesn't work, you might try right clicking it and running as administrator.</p>
     </li>
     <li>
        <p><strong>*Question:*</strong> *Can my friends connect from other networks?* </p>
@@ -511,6 +516,13 @@ function topFunction() {
   <p> Make sure that the server host is on the same network as other users.</p>
   <p> If the server host or users have a Virtual Private Network (VPN) program running, it is the same as being on other networks.</p>
   <p> Make sure that a firewall isn't blocking the connection.</p>
+  <p> Ensure that the server has the same version and mods as those trying to connect. </p>
+  </ul>
+  
+  <ul>
+  <p><strong>The game will not start.</strong></p>
+  <p> In all likelyhood this is a consequence of incompatible mods. Ensure that the mods you're trying to use match the version of Forge you're running. There may be a mod you're trying to run that is meant for another modding program called Fabric, rather than Forge. Lastly, check the pages of individual mods to make sure there are no incompatibilities listed.</p>
+  <p>If none of these steps work, try removing all of your mods. Then add them back one-by-one or in small chuncks to narrow down which mod(s) are problematic.</p>
   </ul>
 </div>
 ```
