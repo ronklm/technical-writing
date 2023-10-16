@@ -258,6 +258,7 @@ function topFunction() {
     <li>
       <p><strong>Step 16:</strong> Return to the main page by clicking "Play" near the top of the launcher </p>
     </li>
+      <img style="border:3px solid #858585;" src="screenshots/Launcher_pre_mod.PNG" width="50%">
     <li>
       <p><strong>Step 17:</strong> Select your newly created installation in the drop-down menu to the left of the large green "Play Button". </p>
     </li>
@@ -267,6 +268,7 @@ function topFunction() {
     <li>
       <p><strong>Step 19:</strong> Continue by clicking the green "Play" button </p>
     </li>
+    <p>Once the game is open, you can close it back out and move on to installing mods.</p>
   </ul>
 </div>
 
@@ -401,6 +403,8 @@ function topFunction() {
   
   <h3>The server should now be running locally, now it’s time to connect! </h3>
 </div>
+
+
 <div id="connecting" class = "tabcontent">
   <h2 class="section-title"><u>Connecting to a Server</u></h2>
   <ul>
