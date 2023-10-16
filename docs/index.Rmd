@@ -21,7 +21,7 @@ body {
 }
 
 #header {
-  background-color: #858585;
+  background-color: #013220;
   color: white;
   padding: 25px;
   text-align: center;
@@ -44,7 +44,7 @@ body {
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: #3e3e3e; /* Set a background color */
+  background-color: #013220; /* Set a background color */
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */
@@ -118,7 +118,7 @@ ul li {
 </div>
 
 <div id="back">
-  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
 </div>
 
 <script>
@@ -167,8 +167,13 @@ function topFunction() {
 }
 </script>
 
-<div id="gettingstarted" class = "tabcontent"> 
+<div id="gettingstarted" class = "tabcontent" style="display:block"> 
   <h2 class="section-title"><u>Getting Started</u></h2>
+<div><strong>What is This Guide</strong></div>
+<ul>
+  <div>In this guide, we'll go through the process of getting started with a modded Minecraft Server on a Windows machine. In our example, we'll be using Minecraft 1.19.4, but the process should be the same for any version of Minecraft Java. You'll have to have installed Minecraft and launched it at least once on your preferred version before starting this guide, visit out Q&A section for more on how to do that. </div>
+</ul>
+  
   <div><strong>Important Terms</strong></div>
 <ul>
 <div><strong>Mod: </strong>Mod is simply short for modification, and it refers to files that can be used to modify Minecraft's features or even add new ones entirely.</div>
