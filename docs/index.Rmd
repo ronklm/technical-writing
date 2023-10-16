@@ -151,7 +151,7 @@ ul li {
     <li>
       <p><strong>Step 1:</strong> Navigate to the download page for
         [Minecraft Forge](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.20.2.html) </p>
-      ![](screenshots/Forge_Page.PNG) 
+      <img style="border:3px solid #858585;" src="screenshots/Forge_Page.PNG">
     </li>
     <li>
       <p><strong>Step 2:</strong> Use the menu on the left side of the page to 
@@ -181,7 +181,7 @@ ul li {
     <li>
       <p><strong>Step 8:</strong> "Install Client" should already be selected, so simply
       click the "OK" button. </p>
-      ![](screenshots/Install_Client.PNG)
+<img style="border:3px solid #858585;" src="screenshots/Install_Client.PNG">
     </li>
     <li>
       <p><strong>Step 9:</strong> Once the window stating that the installation was successful, click the "OK" button.</p>
@@ -194,7 +194,7 @@ ul li {
     </li>
      <li>
       <p><strong>Step 12:</strong> Click "New installation" just below the search bar. </p>
-      ![](screenshots/Installation.PNG)
+      <img style="border:3px solid #858585;" src="screenshots/Installation.PNG">
     </li>
      <li>
       <p><strong>Step 13:</strong> Name the installation whatever you'd like. </p>
@@ -242,7 +242,7 @@ ul li {
     </li>
     <li>
       <p><strong>Step 5:</strong> Open the "mods" folder</p>
-      ![](screenshots/local_mods.PNG)
+      <img style="border:3px solid #858585;" src="screenshots/local_mods.PNG">
     </li>
     <li>
       <p><strong>Step 6:</strong> You can now copy and paste the mods you'd like to use into this folder.</p>
@@ -280,7 +280,7 @@ ul li {
     </li>
     <li>
      <p><strong>Step 7:</strong> Click the "Desktop" button on the left side of the window.</p>
-     ![](screenshots/Forge_Server_Folder.PNG)
+     <img style="border:3px solid #858585;" src="screenshots/Forge_Server_Folder.PNG">
     </li>
     <li>
      <p><strong>Step 8:</strong> In the window, open the folder that you'd like to contain your server.</p>
@@ -296,7 +296,7 @@ ul li {
     </li>
     <li>
      <p><strong>Step 12:</strong> Open the file "run.bat" and wait for the text to stop scrolling.</p>
-      ![](screenshots/server_bat.PNG)
+<img style="border:3px solid #858585;" src="screenshots/server_bat.PNG">
     </li>
     <li>
       <p><strong>Step 13:</strong> Press "enter" on the keyboard to close the terminal window </p>
@@ -307,7 +307,7 @@ ul li {
     </li>
      <li>
      <p><strong>Step 15:</strong> Replace "eula=false" with *"eula=true"*.</p>
-      ![](screenshots/eulaPNG.PNG)
+      <img style="border:3px solid #858585;" src="screenshots/eulaPNG.PNG">
     </li>
     <li>
       <p><strong>Step 16:</strong> On the keyboard, press "ctrl" and "s" at the same time to save the file. </p>
@@ -318,7 +318,7 @@ ul li {
     <li>
      <p><strong>Step 18:</strong> Place your chosen mods into the "mods" folder.</p>
      <ul><p><strong>Note:</strong> Assuming that you've already installed them for single player, simply copy and paste your single player mods into your server's folder.</p></ul>
-      ![](screenshots/Server_mods_folder.PNG)
+      <img style="border:3px solid #858585;" src="screenshots/Server_mods_folder.PNG">
     </li>
     <li>
       <p><strong>Step 19:</strong>Open "run.bat" and wait for the server to start.</p>
@@ -341,7 +341,7 @@ ul li {
     <li>
      <p><strong>Step 29:</strong> Type "/whitelist add " followed by your Minecraft username into the terminal.</p>
      <ul><p><strong>Ex:</strong> "/whitelist add LumberHat"</p></ul>
-      ![](screenshots/Whitelist.PNG)
+      <img style="border:3px solid #858585;" src="screenshots/Whitelist.PNG">
     </li>
     <li>
       <p><strong>Step 30:</strong> Press the "enter" key to grant permission to join the server. </p>
@@ -365,7 +365,7 @@ ul li {
     </li>
     <li>
      <p><strong>Step 4:</strong> Name the server whatever you'd like.</p>
-      ![](screenshots/creating_server.PNG)
+      <img style="border:3px solid #858585;" src="screenshots/creating_server.PNG" width="50%">
     </li>
     <li>
      <p><strong>Step 5:</strong> Enter *"127.0.0.1"* into the address field.</p>
